@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from 'antd';
 import s from "./ListMyProject.model.scss"
+import MyButton from "../../common/MyButton/MyButton";
 
 const ListMyProject = (props) => {
    let onChange = (e) => {
@@ -29,6 +30,11 @@ const ListMyProject = (props) => {
             <Button>Routing("ROUTE")</Button>
             <Button>withRouter</Button>
             <Button>HOC</Button>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <MyButton/>
 
         </div>
     )

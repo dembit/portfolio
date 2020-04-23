@@ -6,3 +6,11 @@
    margin-top: 2.5em;
 
  }
+
+@media (max-width: 900px) {
+  .portfolio {
+    grid-template-columns: 1fr ;
+
+
+  }
+}

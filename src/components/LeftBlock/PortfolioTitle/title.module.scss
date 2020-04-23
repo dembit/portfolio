@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Conv_alfredo';
+  src: local('☺'), url('../../../fonts/alfredo_heavy_hollow.woff') format('woff'), url('../../../fonts/alfredo_heavy_hollow.ttf') format('truetype'), url('../../../fonts/alfredo_heavy_hollow.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.title {
+  .rrr {
+    font-size: 45px;
+  }
+  h1{
+    color: #990000;
+    font-family: 'Conv_alfredo';
+   }
+}

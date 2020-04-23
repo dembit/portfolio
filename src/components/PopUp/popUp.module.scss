@@ -1,0 +1,21 @@
+
+.popUp {
+
+  :global .ant-modal-content {
+    background-color: transparent;
+    box-shadow: none;
+
+    :global .ant-modal-body {
+      color: white;
+
+
+    }
+
+
+  }
+
+  .textModal {
+    font-size: 1.2rem;
+  }
+
+}

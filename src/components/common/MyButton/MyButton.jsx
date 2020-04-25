@@ -4,7 +4,7 @@ import s from "./MyButton.module.scss";
 const MyButton = (props) => {
     return (
         <div className={s.wrap}>
-            <button className={s.button}>Перейти в проект</button>
+            <a href="https://dembit.github.io/socialNetwork/" target="_blank"> <button className={s.button}>Перейти в проект</button> </a>
         </div>
     )
 };

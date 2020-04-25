@@ -31,6 +31,7 @@ const ListMyProject = (props) => {
             <Button>withRouter</Button>
             <Button>HOC</Button>
             <Button>REST API</Button>
+            <Button>GRID</Button>
             <br/>
             <br/>
             <br/>

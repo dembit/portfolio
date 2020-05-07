@@ -16,6 +16,7 @@ const ListMyProject = (props) => {
             <Button>CSS</Button>
             <Button>JAVASCRIPT</Button>
             <Button>REACT</Button>
+            <Button>TYPESCRIPT</Button>
             <br/>
             <br/>
 

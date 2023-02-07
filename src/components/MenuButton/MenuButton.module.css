@@ -1,6 +1,7 @@
 .menuButton {
   position: fixed;
   z-index: 4;
+  top: 46px;
   right: 38px;
   cursor: pointer;
   height: 40px;
@@ -24,12 +25,6 @@
   top: 6px;
   font-size: 24px;
   text-transform: lowercase;
-}
-
-@media screen and (min-width: 600px) {
-  .menuButton {
-    top: 46px;
-  }
 }
 
 @media screen and (max-width: 600px) {

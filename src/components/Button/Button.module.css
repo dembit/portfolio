@@ -1,0 +1,11 @@
+.button {
+  padding: 10px;
+  display: inline-block;
+  box-shadow: var(--boxShadow00);
+  background-color: var(--base08);
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--base02);
+  font-weight: 900;
+  text-transform: uppercase;
+}

@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @font-face {
+  font-family: "Inconsolata";
+  src: url("./fonts/Inconsolata-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Lato", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    serif;
+  --base00: #2f2f2f;
+  --base01: #8a8a8a;
+  --base02: #cacaca;
+  --base03: #f0f0f0;
+  --base04: #7a7a7a;
+  --base05: #026ccf;
+  --base06: #333;
+  --base07: #9cd9f966;
+  --base08: #5a5a5a;
+  --base09: #00000005;
+  --base10: #2d2d2d;
+  --base11: #00000063;
+  --boxShadow00: -2px 3px 1px rgb(0 0 0 / 23%);
+  --boxShadow01: 0px 2px 8px rgb(0 0 0 / 23%);
+  --boxShadow02: 0 0 50px rgb(0 0 0 / 75%) inset;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  color: var(--base02);
+}
+
+.two_line {
+  position: relative;
+  z-index: 1;
+}
+
+.two_line:hover.two_line::after,
+.two_line:hover.two_line::before {
+  width: 100%;
+}
+.two_line::after,
+.two_line::before {
+  background-color: var(--base10);
+  height: 50%;
+  content: " ";
+  position: absolute;
+  transition: 0.5s;
+  width: 0px;
+  z-index: -1;
+}
+
+.two_line::after {
+  top: 0;
+  left: 0;
+}
+.two_line::before {
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 70vw;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
 }

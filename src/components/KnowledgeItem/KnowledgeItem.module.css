@@ -1,0 +1,30 @@
+.item {
+  height: 40px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  background-color: #eee;
+  position: relative;
+  box-shadow: var(--boxShadow00);
+}
+
+.item_text {
+  color: var(--base02);
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--base04);
+}
+
+.item_bg {
+  width: 20%;
+  background-color: var(--base08);
+}
+.item_precent {
+  top: 9px;
+  color: var(--base01);
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+}

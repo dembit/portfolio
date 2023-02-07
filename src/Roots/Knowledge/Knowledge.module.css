@@ -1,0 +1,26 @@
+.knowledge {
+  min-height: 100%;
+}
+
+.knowledge_desc {
+  color: var(--base01);
+}
+
+.knowledge_desc > span {
+  color: var(--base02);
+  font-weight: 700;
+}
+
+.knowledge_button {
+  margin: 30px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.knowledge > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+  margin: 0;
+}

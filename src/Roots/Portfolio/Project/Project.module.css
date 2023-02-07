@@ -1,0 +1,71 @@
+.project {
+  cursor: pointer;
+  box-shadow: var(--boxShadow01);
+}
+.project_body_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--base11);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px 20px;
+  align-content: center;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.project_header {
+  background-color: var(--base03);
+  color: var(--base04);
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project_header__point {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.project_header__point::before {
+  width: 15px;
+  height: 15px;
+  content: " ";
+  position: absolute;
+  left: 20px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.project_header__point::after {
+  width: 15px;
+  height: 15px;
+  content: " ";
+  left: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.project_body {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  box-shadow: var(--boxShadow02);
+  background-color: var(--base00);
+  color: var(--base02);
+  display: flex;
+  align-items: center;
+}
+
+.project_body > img {
+  width: 100%;
+}

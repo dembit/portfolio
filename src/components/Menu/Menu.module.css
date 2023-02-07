@@ -1,0 +1,35 @@
+.wrap_menu {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  background-color: var(--base06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap_menu__container {
+  margin: 40px;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap_menu__container > a {
+  margin-bottom: 5px;
+  background-color: var(--base09);
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  color: var(--base08);
+  font-size: 32px;
+}
+
+.wrap_menu__container > a:hover {
+  color: var(--base01);
+}

@@ -1,0 +1,22 @@
+.line {
+  width: 205px;
+  height: 205px;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+}
+
+.line > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 200%;
+  height: 44px;
+  position: absolute;
+  color: var(--base03);
+  cursor: pointer;
+  box-shadow: var(--boxShadow00);
+}

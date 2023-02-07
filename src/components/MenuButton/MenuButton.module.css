@@ -1,0 +1,29 @@
+.menuButton {
+  position: fixed;
+  z-index: 4;
+  top: 46px;
+  right: 38px;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+}
+
+.menuButton i {
+  display: block;
+  margin: 8px;
+  width: 42px;
+  height: 2px;
+  background-color: var(--base04);
+}
+
+.menuButton_text {
+  opacity: 1;
+  width: 160px;
+  text-align: right;
+  position: absolute;
+  color: var(--base01);
+  font-weight: 900;
+  top: 6px;
+  font-size: 24px;
+  text-transform: lowercase;
+}

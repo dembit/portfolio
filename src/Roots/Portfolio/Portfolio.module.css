@@ -1,0 +1,17 @@
+.portfolio > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+}
+
+.portfolio_projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1120px) {
+  .portfolio_projects {
+    grid-template-columns: 1fr;
+  }
+}

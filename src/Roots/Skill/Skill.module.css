@@ -1,0 +1,5 @@
+.skill > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+}

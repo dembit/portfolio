@@ -1,0 +1,23 @@
+.about > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+}
+
+.about_content {
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 20px;
+}
+
+.about_content__img > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1120px) {
+  .about_content {
+    grid-template-columns: 1fr;
+  }
+}

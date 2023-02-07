@@ -8,7 +8,7 @@ import Knowledge from "./Roots/Knowledge/Knowledge";
 import Portfolio from "./Roots/Portfolio/Portfolio";
 import About from "./Roots/About/About";
 import Base from "./Roots/Base/Base";
-import CanvasProject from "./Roots/Projects/CanvasProject/CanvasProject";
+import CanvasProject from "./Roots/Projects/Canvas/CanvasProject";
 
 function App() {
   const location = useLocation();

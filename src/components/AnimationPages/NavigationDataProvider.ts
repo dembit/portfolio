@@ -5,6 +5,7 @@ import { PAGES, PageType } from "../../variable";
 export type NavigationProviderType = {
   prev: PageType;
   next: PageType;
+  currentIndex: number;
 } | null;
 
 export const useNavigationDataProvider = () => {
@@ -18,7 +19,11 @@ export const useNavigationDataProvider = () => {
     if (index !== -1) {
       const prev = index === 0 ? PAGES.length - 1 : index - 1;
       const next = index === PAGES.length - 1 ? 0 : index + 1;
-      setNavigationData({ prev: PAGES[prev], next: PAGES[next] });
+      setNavigationData({
+        prev: PAGES[prev],
+        next: PAGES[next],
+        currentIndex: index,
+      });
     }
   }, [location]);
   return navigationData;

@@ -8,11 +8,11 @@ export enum PathEnum {
 }
 
 export const PAGES = [
-  { id: 1, text: "Основная", path: PathEnum.BASE },
-  { id: 3, text: "Знания", path: PathEnum.KNOWLEDGE },
+  { id: 0, text: "Основная", path: PathEnum.BASE },
+  { id: 1, text: "Знания", path: PathEnum.KNOWLEDGE },
   { id: 2, text: "Опыт", path: PathEnum.SKILL },
-  { id: 4, text: "Портфолио", path: PathEnum.PORTFOLIO },
-  { id: 5, text: "Обо мне", path: PathEnum.ABOUT },
+  { id: 3, text: "Портфолио", path: PathEnum.PORTFOLIO },
+  { id: 4, text: "Обо мне", path: PathEnum.ABOUT },
 ];
 
 export const listKnowledge = [

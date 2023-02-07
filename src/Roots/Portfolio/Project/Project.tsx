@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "./Project.module.css";
 import { motion } from "framer-motion";
 import Button from "../../../components/Button/Button";
@@ -19,8 +19,16 @@ const variant = {
 };
 
 const Project = ({ src, tools, title, callback }: Props) => {
+  const [open, setOpen] = useState(false);
+  const styleBody = open
+    ? { opacity: 1, transform: "translateY(0px)" }
+    : { opacity: 0, transform: "translateY(-600px)" };
   return (
-    <motion.div whileHover="hov" className={styled.project}>
+    <motion.div
+      whileHover="hov"
+      className={styled.project}
+      onClick={() => setOpen(!open)}
+    >
       <div className={styled.project_header}>
         <div className={styled.project_header__point}>
           <i></i>
@@ -29,7 +37,7 @@ const Project = ({ src, tools, title, callback }: Props) => {
       </div>
       <div className={styled.project_body}>
         <motion.div
-          initial={{ opacity: 0, y: -600 }}
+          style={styleBody}
           className={styled.project_body_bg}
           variants={variant}
         >

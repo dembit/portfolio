@@ -4,6 +4,7 @@ import styled from "./Menu.module.css";
 import { motion } from "framer-motion";
 import { PAGES } from "../../variable";
 import { NavLink } from "react-router-dom";
+import { useContextPages } from "../AnimationPages/ContextPages";
 type Props = {};
 
 const menuContainer = {
@@ -18,6 +19,7 @@ const menuContainer = {
 
 const Menu = (props: Props) => {
   const [open, setOpen] = useState(false);
+  const { dataNavigation, setDirection } = useContextPages();
   return (
     <>
       <MenuBottom
@@ -41,7 +43,12 @@ const Menu = (props: Props) => {
               style={({ isActive }) =>
                 isActive ? { color: "var(--base01)" } : {}
               }
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                if (dataNavigation && dataNavigation?.currentIndex !== id) {
+                  setDirection(id > dataNavigation?.currentIndex ? 1 : -1);
+                }
+                setOpen(false);
+              }}
               to={path}
             >
               {text}

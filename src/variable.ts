@@ -1,10 +1,10 @@
 export enum PathEnum {
-  BASE = "/portfolio",
-  SKILL = "/portfolio/skill",
-  KNOWLEDGE = "/portfolio/knowledge",
-  PORTFOLIO = "/portfolio/portfolio",
-  ABOUT = "/portfolio/about",
-  CANVAS = "/portfolio/projects/canvas",
+  BASE = "/",
+  SKILL = "/skill",
+  KNOWLEDGE = "/knowledge",
+  PORTFOLIO = "/portfolio",
+  ABOUT = "/about",
+  CANVAS = "/projects/canvas",
 }
 
 export const PAGES = [

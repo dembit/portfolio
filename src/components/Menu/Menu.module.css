@@ -33,3 +33,9 @@
 .wrap_menu__container > a:hover {
   color: var(--base01);
 }
+
+@media screen and (max-width: 1120px) {
+  .wrap_menu__container {
+    width: 60vw;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Root from "./Roots/Root";
 import { AnimatePresence } from "framer-motion";
 import { PathEnum } from "./variable";

@@ -110,4 +110,7 @@ body {
   .container {
     width: 100vw;
   }
+  body {
+    font-size: 16px;
+  }
 }

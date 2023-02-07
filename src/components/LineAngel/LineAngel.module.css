@@ -20,3 +20,9 @@
   cursor: pointer;
   box-shadow: var(--boxShadow00);
 }
+
+@media screen and (max-width: 600px) {
+  .line {
+    display: none;
+  }
+}

@@ -20,9 +20,15 @@ class CrazyPoints {
   private visibleCircle = [] as Circle[];
   private circls = [] as Circle[];
   constructor(count: number, ctx: CanvasRenderingContext2D | null) {
-    const width = window.innerWidth - this.border;
-    const height = window.innerHeight - this.border;
+    let width = window.innerWidth - this.border;
+    let height = window.innerHeight - this.border;
     if (ctx) {
+      const parent = ctx.canvas.parentElement;
+      if (parent) {
+        const styles = getComputedStyle(parent);
+        width = parseInt(styles.getPropertyValue("width"), 10);
+        height = parseInt(styles.getPropertyValue("height"), 10);
+      }
       ctx.canvas.width = width;
       ctx.canvas.height = height;
       this.addEventMouseMove(ctx.canvas);

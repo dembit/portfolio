@@ -1,10 +1,8 @@
 .menuButton {
   position: fixed;
   z-index: 4;
-  top: 46px;
   right: 38px;
   cursor: pointer;
-  width: 50px;
   height: 40px;
 }
 
@@ -26,4 +24,19 @@
   top: 6px;
   font-size: 24px;
   text-transform: lowercase;
+}
+
+@media screen and (min-width: 600px) {
+  .menuButton {
+    top: 46px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menuButton {
+    padding: 5px;
+    background-color: var(--base02);
+    border-radius: 8px;
+    bottom: 20px;
+  }
 }

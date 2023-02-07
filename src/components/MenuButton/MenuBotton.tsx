@@ -8,6 +8,7 @@ type Props = {
 
 const container = {
   animate: {
+    x: [200, 0],
     transition: { staggerChildren: 0.1, delayChildren: 1, delay: 1 },
   },
 };
@@ -23,7 +24,7 @@ const item = {
 };
 
 const itemText = {
-  hover: { opacity: 1, right: 50, transition: { duration: 0.5 } },
+  hover: { opacity: 1, right: 70, transition: { duration: 0.5 } },
 };
 
 const MenuBottom = ({ callback, text }: Props) => {

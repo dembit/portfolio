@@ -11,7 +11,7 @@
 }
 
 .wrap_menu__container {
-  margin: 40px;
+  margin: 60px 40px 40px 40px;
   width: 40vw;
   display: flex;
   flex-direction: column;

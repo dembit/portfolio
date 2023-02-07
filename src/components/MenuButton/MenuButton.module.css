@@ -30,8 +30,11 @@
 @media screen and (max-width: 600px) {
   .menuButton {
     padding: 5px;
-    background-color: var(--base02);
+    background-color: var(--base06);
+    box-shadow: var(--boxShadow02);
     border-radius: 8px;
     bottom: 20px;
+    top: 20px;
+    right: 20px;
   }
 }

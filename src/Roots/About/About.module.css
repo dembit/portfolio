@@ -2,6 +2,8 @@
   text-align: center;
   color: var(--base02);
   font-size: 42px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .about_content {

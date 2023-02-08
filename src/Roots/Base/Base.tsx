@@ -13,7 +13,7 @@ const Base = (props: Props) => {
   return (
     <div className={[styled.base, "container"].join(" ")}>
       <div style={{ position: "absolute", width: "100%", height: "100%" }}>
-        {t("part")}
+        {t("dima")}
         <AnimateCanvas />
       </div>
       <Typist avgTypingDelay={-1} className={styled.description}>

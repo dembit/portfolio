@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Root from "./Roots/Root";
 import { AnimatePresence } from "framer-motion";
@@ -14,18 +14,20 @@ function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence>
-      <Routes location={location} key={location.pathname}>
-        <Route path={PathEnum.BASE} element={<Root />}>
-          <Route path={PathEnum.BASE} element={<Base />} />
-          <Route path={PathEnum.SKILL} element={<Skill />} />
-          <Route path={PathEnum.KNOWLEDGE} element={<Knowledge />} />
-          <Route path={PathEnum.PORTFOLIO} element={<Portfolio />} />
-          <Route path={PathEnum.ABOUT} element={<About />} />
-          <Route path={PathEnum.CANVAS} element={<CanvasProject />} />
-        </Route>
-      </Routes>
-    </AnimatePresence>
+    <Suspense fallback="loading">
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path={PathEnum.BASE} element={<Root />}>
+            <Route path={PathEnum.BASE} element={<Base />} />
+            <Route path={PathEnum.SKILL} element={<Skill />} />
+            <Route path={PathEnum.KNOWLEDGE} element={<Knowledge />} />
+            <Route path={PathEnum.PORTFOLIO} element={<Portfolio />} />
+            <Route path={PathEnum.ABOUT} element={<About />} />
+            <Route path={PathEnum.CANVAS} element={<CanvasProject />} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
+    </Suspense>
   );
 }
 

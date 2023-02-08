@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Typist from "react-typist";
 import AnimateCanvas from "../../components/CrazyPoints/AnimateCanvas";
 
@@ -7,9 +8,12 @@ import styled from "./Base.module.css";
 type Props = {};
 
 const Base = (props: Props) => {
+  const { t } = useTranslation();
+
   return (
     <div className={[styled.base, "container"].join(" ")}>
       <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+        {t("part")}
         <AnimateCanvas />
       </div>
       <Typist avgTypingDelay={-1} className={styled.description}>

@@ -1,7 +1,7 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import Typist from "react-typist";
+import { Trans, useTranslation } from "react-i18next";
 import AnimateCanvas from "../../components/CrazyPoints/AnimateCanvas";
+import { motion } from "framer-motion";
 
 import styled from "./Base.module.css";
 
@@ -13,35 +13,46 @@ const Base = (props: Props) => {
   return (
     <div className={[styled.base, "container"].join(" ")}>
       <div style={{ position: "absolute", width: "100%", height: "100%" }}>
-        {t("dima")}
         <AnimateCanvas />
       </div>
-      <Typist avgTypingDelay={-1} className={styled.description}>
-        <h1>Привет всем! Я Калиниченко Дмитрий</h1>
-        <br />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, delay: 1 }}
+        className={[styled.description, "container"].join(" ")}
+      >
+        <h1>{t("greetings_1")}</h1>
         <div>
-          Представляю вашему вниманию <h2>САЙТ ПОРТФОЛИО</h2>, который раскажет
-          обо мне и моих способностях.
+          <Trans i18nKey="greetings_2">
+            Представляю вашему вниманию <h2>САЙТ ПОРТФОЛИО</h2>, который
+            раскажет обо мне и моих способностях.
+          </Trans>
         </div>
-        <br />
         <div>
-          Как пример вы можете наблюдать <h2>КРУТУЮ АНИМАЦИЮ</h2> при
-          перемещении курсора!!!
+          <Trans i18nKey="greetings_3">
+            Как пример вы можете наблюдать <h2>КРУТУЮ АНИМАЦИЮ</h2> при
+            перемещении курсора!!!
+          </Trans>
         </div>
-        <br />
         <div>
-          Она реализована мною с помощью <h2>React, Canvas и ООП Классы.</h2>
+          <Trans i18nKey="greetings_4">
+            Она реализована мною с помощью <h2>React, Canvas и ООП Классы.</h2>
+          </Trans>
         </div>
-        <br />
         <div>
-          Код можно увидеть <h2>здесь!</h2>
+          <Trans i18nKey="greetings_5">
+            Код можно увидеть <h2>здесь!</h2>
+          </Trans>
         </div>
-        <br />
         <div>
-          Если вы дочитали до этого места то прошу <h2> более детально </h2>{" "}
-          ознакомится со мной
+          <Trans i18nKey="greetings_6">
+            <div>
+              Если вы дочитали до этого места то прошу <h2> более детально </h2>
+              ознакомится со мной
+            </div>
+          </Trans>
         </div>
-      </Typist>
+      </motion.div>
     </div>
   );
 };

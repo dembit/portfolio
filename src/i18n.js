@@ -21,7 +21,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     backend: {
-      loadPath: "/dembit.github.io/locales/{{lng}}/{{ns}}.json",
+      loadPath: "/dembit.github.io/portfolio/locales/{{lng}}/{{ns}}.json",
     },
     fallbackLng: "en",
     debug: true,

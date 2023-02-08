@@ -15,7 +15,8 @@
 
 @media screen and (max-width: 600px) {
   .language {
-    top: 30px;
+    top: 20px;
+    left: 20px;
     background-color: var(--base00);
     box-shadow: var(--boxShadow02);
   }

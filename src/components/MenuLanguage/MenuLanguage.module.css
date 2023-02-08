@@ -6,8 +6,17 @@
   left: 38px;
   text-align: right;
   padding: 5px;
-  background-color: var(--base00);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 900;
+  font-size: 24px;
+  color: var(--base04);
+}
+
+@media screen and (max-width: 600px) {
+  .language {
+    top: 30px;
+    background-color: var(--base00);
+    box-shadow: var(--boxShadow02);
+  }
 }

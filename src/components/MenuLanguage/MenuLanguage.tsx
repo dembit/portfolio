@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "./MenuLanguage.module.css";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -15,19 +16,31 @@ const MenuLanguage = (props: Props) => {
     setOpen(!open);
   };
   return (
-    <details className={styled.language} open={open} onClick={onToggle}>
+    <motion.details
+      initial={{ x: -200 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+      className={styled.language}
+      open={open}
+      onClick={onToggle}
+    >
       <summary>{i18n.resolvedLanguage}</summary>
-      {Languages.map((item, i) => (
-        <div
-          key={i}
-          onClick={() => {
-            i18n.changeLanguage(item);
-          }}
-        >
-          {item}
-        </div>
-      ))}
-    </details>
+      {Languages.map((item, i) => {
+        if (item === i18n.resolvedLanguage) {
+          return <></>;
+        }
+        return (
+          <div
+            key={i}
+            onClick={() => {
+              i18n.changeLanguage(item);
+            }}
+          >
+            {item}
+          </div>
+        );
+      })}
+    </motion.details>
   );
 };
 

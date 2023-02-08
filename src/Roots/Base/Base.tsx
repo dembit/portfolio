@@ -12,7 +12,7 @@ const Base = (props: Props) => {
 
   return (
     <div className={[styled.base, "container"].join(" ")}>
-      <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+      <div className={styled.base_canvas}>
         <AnimateCanvas />
       </div>
       <motion.div
@@ -39,6 +39,7 @@ const Base = (props: Props) => {
             Она реализована мною с помощью <h2>React, Canvas и ООП Классы.</h2>
           </Trans>
         </div>
+        <br />
         <div>
           <Trans i18nKey="greetings_5">
             Код можно увидеть <h2>здесь!</h2>
@@ -46,10 +47,8 @@ const Base = (props: Props) => {
         </div>
         <div>
           <Trans i18nKey="greetings_6">
-            <div>
-              Если вы дочитали до этого места то прошу <h2> более детально </h2>
-              ознакомится со мной
-            </div>
+            Если вы дочитали до этого места то прошу <h2> более детально </h2>
+            ознакомится со мной
           </Trans>
         </div>
       </motion.div>

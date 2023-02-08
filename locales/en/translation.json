@@ -1,3 +1,8 @@
 {
-    "dima": "sfdf"
+    "greetings_1": "Hello everyone! My name is Dmitrii Kalinichenko",
+    "greetings_2": "I present to your attention my <1>PORTFOLIO WEBSITE</1>, which will tell you about me and my abilities",
+    "greetings_3": "As an example, you can observe the <1>COOL ANIMATION </1> when you move your cursor!!!",
+    "greetings_4": "I implemented it using  <1>React, Canvas и ООP Classes.</1>",
+    "greetings_5": "You can see the code <1>here!</1>",
+    "greetings_6": "If you have read this far, I ask you to <1>take a closer</1> look at me."
 }

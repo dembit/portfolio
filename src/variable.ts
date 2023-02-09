@@ -22,14 +22,15 @@ export const listKnowledge = [
   { id: 2, name: "CSS", percent: "96%" },
   { id: 3, name: "Javascript", percent: "94%" },
   { id: 4, name: "React", percent: "93%" },
-  { id: 5, name: "ReduxToolkit", percent: "80%" },
-  { id: 6, name: "Typescript", percent: "85%" },
-  { id: 7, name: "MotionFramer", percent: "85%" },
-  { id: 8, name: "OOP", percent: "87%" },
-  { id: 9, name: "Next", percent: "60%" },
-  { id: 10, name: "NodeJs", percent: "40%" },
-  { id: 11, name: "Docker", percent: "10%" },
-  { id: 12, name: "CI/CD", percent: "11%" },
+  { id: 5, name: "React-i18Next", percent: "87%" },
+  { id: 6, name: "ReduxToolkit", percent: "80%" },
+  { id: 7, name: "Typescript", percent: "85%" },
+  { id: 8, name: "MotionFramer", percent: "85%" },
+  { id: 9, name: "OOP", percent: "87%" },
+  { id: 10, name: "Next", percent: "60%" },
+  { id: 11, name: "NodeJs", percent: "40%" },
+  { id: 12, name: "Docker", percent: "10%" },
+  { id: 13, name: "CI/CD", percent: "11%" },
 ];
 
 export const listButtonKnowledge = [

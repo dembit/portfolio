@@ -9,12 +9,13 @@ import Portfolio from "./Roots/Portfolio/Portfolio";
 import About from "./Roots/About/About";
 import Base from "./Roots/Base/Base";
 import CanvasProject from "./Roots/Projects/Canvas/CanvasProject";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const location = useLocation();
 
   return (
-    <Suspense fallback="loading">
+    <Suspense fallback={<Loading />}>
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path={PathEnum.BASE} element={<Root />}>

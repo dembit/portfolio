@@ -12,6 +12,7 @@ import CanvasProject from "./Roots/Projects/Canvas/CanvasProject";
 import Loading from "./components/Loading/Loading";
 import PortfolioProject from "./Roots/Projects/PortfolioProject/PortfolioProject";
 import AnimateCanvas from "./components/CrazyPoints/AnimateCanvas";
+import ChessProject from "./Roots/Projects/ChessProject/ChessProject";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
               path={PathEnum.PORTFOLIO_PROJECT}
               element={<PortfolioProject />}
             />
+            <Route path={PathEnum.CHESS_PROJECT} element={<ChessProject />} />
             <Route path={PathEnum.CRAZY_POINTS} element={<AnimateCanvas />} />
           </Route>
         </Routes>

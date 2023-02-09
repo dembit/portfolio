@@ -15,6 +15,7 @@ const CanvasProject = (props: Props) => {
       </div>
       <div>Component: React</div>
       <div>OOP: yes</div>
+      <div>Classes: yes</div>
       <div>requestAnimationFrame: yes</div>
       <div>Animation: Canvas</div>
       <div>

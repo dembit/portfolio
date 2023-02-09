@@ -26,6 +26,7 @@ const Portfolio = (props: Props) => {
           title={t("portfolio_chess")}
           tools={["HTML", "CSS", "React", "OOP"]}
           src={chessPng}
+          callback={() => navigate(PathEnum.CHESS_PROJECT)}
         />
         <Project
           title={t("portfolio_points")}

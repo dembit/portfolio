@@ -10,6 +10,10 @@
   color: var(--base02);
 }
 
+.about {
+  height: 100%;
+}
+
 .about_content {
   font-size: 24px;
   display: grid;

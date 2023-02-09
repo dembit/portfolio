@@ -20,10 +20,18 @@ const PortfolioProject = (props: Props) => {
       <div>Animation Routers: yes (use AnimatePresence)</div>
       <div>Module css: yes</div>
       <div>
-        <a href="/">Link Website</a>
+        <a target="_blank" href="/">
+          Link Website
+        </a>
       </div>
       <div>
-        <a href="/">Git Code</a>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/dembit/portfolio/tree/main"
+        >
+          Git Code
+        </a>
       </div>
     </div>
   );

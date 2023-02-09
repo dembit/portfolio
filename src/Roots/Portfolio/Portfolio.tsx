@@ -31,6 +31,7 @@ const Portfolio = (props: Props) => {
           title={t("portfolio_points")}
           tools={["CANVAS", "REACT", "OOP"]}
           src={canvasPng}
+          callback={() => navigate(PathEnum.CANVAS)}
         />
       </div>
     </div>

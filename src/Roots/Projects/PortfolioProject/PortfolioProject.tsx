@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "./PortfolioProject.module.css";
 import porfolioPng from "../../../img/potfolio.png";
+import { NavLink } from "react-router-dom";
+import { PathEnum } from "../../../variable";
 
 type Props = {};
 
@@ -20,18 +22,18 @@ const PortfolioProject = (props: Props) => {
       <div>Animation Routers: yes (use AnimatePresence)</div>
       <div>Module css: yes</div>
       <div>
-        <a target="_blank" href="/">
+        <NavLink target="_blank" to={PathEnum.BASE}>
           Link Website
-        </a>
+        </NavLink>
       </div>
       <div>
-        <a
+        <NavLink
           rel="noreferrer"
           target="_blank"
-          href="https://github.com/dembit/portfolio/tree/main"
+          to="https://github.com/dembit/portfolio/tree/main"
         >
           Git Code
-        </a>
+        </NavLink>
       </div>
     </div>
   );

@@ -1,4 +1,21 @@
-.canvasProject {
+/* .canvasProject {
   background-image: url("../../../img/iniverse.jpg");
   height: 100%;
+} */
+
+.canvasProject > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.canvasProject img {
+  box-shadow: var(--boxShadow01);
+  width: 100%;
+}
+
+.canvasProject a {
+  color: var(--base02);
 }

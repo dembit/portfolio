@@ -1,0 +1,16 @@
+.portfolioProject > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.portfolioProject img {
+  box-shadow: var(--boxShadow01);
+  width: 100%;
+}
+
+.portfolioProject a {
+  color: var(--base02);
+}

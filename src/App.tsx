@@ -10,6 +10,7 @@ import About from "./Roots/About/About";
 import Base from "./Roots/Base/Base";
 import CanvasProject from "./Roots/Projects/Canvas/CanvasProject";
 import Loading from "./components/Loading/Loading";
+import PortfolioProject from "./Roots/Projects/PortfolioProject/PortfolioProject";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,10 @@ function App() {
             <Route path={PathEnum.PORTFOLIO} element={<Portfolio />} />
             <Route path={PathEnum.ABOUT} element={<About />} />
             <Route path={PathEnum.CANVAS} element={<CanvasProject />} />
+            <Route
+              path={PathEnum.PORTFOLIO_PROJECT}
+              element={<PortfolioProject />}
+            />
           </Route>
         </Routes>
       </AnimatePresence>

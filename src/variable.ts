@@ -7,6 +7,7 @@ export enum PathEnum {
   PORTFOLIO = "/portfolio",
   ABOUT = "/about",
   CANVAS = "/projects/canvas",
+  PORTFOLIO_PROJECT = "/projects/portfolio",
 }
 
 export const PAGES = [

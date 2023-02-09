@@ -6,7 +6,7 @@ import styled from "./Arrow.module.css";
 export type arrowType = "left" | "right";
 
 type Props = {
-  text: string;
+  text: () => string;
   path: string;
   type: arrowType;
   callback: () => void;
@@ -37,7 +37,7 @@ const Arrow = ({ text, path, type, callback }: Props) => {
       <NavLink className={styled.arrow_link} to={path}>
         <div className={styled.arrow_link__arrow}>
           <motion.span custom={type} variants={arrowVariants}>
-            {text}
+            {text()}
           </motion.span>
         </div>
       </NavLink>

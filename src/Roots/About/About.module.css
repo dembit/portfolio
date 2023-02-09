@@ -6,6 +6,10 @@
   margin-bottom: 30px;
 }
 
+.about a {
+  color: var(--base02);
+}
+
 .about_content {
   font-size: 24px;
   display: grid;

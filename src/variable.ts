@@ -1,3 +1,5 @@
+import { t } from "i18next";
+
 export enum PathEnum {
   BASE = "/",
   SKILL = "/skill",
@@ -8,11 +10,11 @@ export enum PathEnum {
 }
 
 export const PAGES = [
-  { id: 0, text: "Основная", path: PathEnum.BASE },
-  { id: 1, text: "Знания", path: PathEnum.KNOWLEDGE },
-  { id: 2, text: "Опыт", path: PathEnum.SKILL },
-  { id: 3, text: "Портфолио", path: PathEnum.PORTFOLIO },
-  { id: 4, text: "Обо мне", path: PathEnum.ABOUT },
+  { id: 0, text: () => t("menu_base"), path: PathEnum.BASE },
+  { id: 1, text: () => t("menu_knowledge"), path: PathEnum.KNOWLEDGE },
+  { id: 2, text: () => t("menu_experience"), path: PathEnum.SKILL },
+  { id: 3, text: () => t("menu_portfolio"), path: PathEnum.PORTFOLIO },
+  { id: 4, text: () => t("menu_about"), path: PathEnum.ABOUT },
 ];
 
 export const listKnowledge = [
@@ -49,11 +51,11 @@ export const listButtonKnowledge = [
 
 export const ArumtradeCompany = {
   name: "Arumtrade",
-  description: [
-    "Февраль 2020 - Март2021",
-    "Frontend разработчик React",
-    "Проект был связан с валютами!",
-    "Отрисовка графиков(Chartjs)",
+  description: () => [
+    t("arumtrade_0"),
+    t("arumtrade_1"),
+    t("arumtrade_2"),
+    t("arumtrade_3"),
     "RestApi",
     "Websoket",
     "Redux",
@@ -62,16 +64,16 @@ export const ArumtradeCompany = {
 
 export const AustrimCompany = {
   name: "Austrim",
-  description: [
-    "Март 2021 - Декабрь 2022",
-    "Frontend разработчик React",
-    "Ежедневные митинги(постановка задач) (Jira, JetBrains Space )",
-    "Код ревью",
-    "Работа с gitlab (как без него)))",
-    "Работа с бекендом REST API (получение и отображение на веб странице)",
-    "Работа с компонентами.",
-    "Оптимизация кода",
-    "Добавление новых фитч.",
+  description: () => [
+    t("austrim_0"),
+    t("austrim_1"),
+    t("austrim_2"),
+    t("austrim_3"),
+    t("austrim_4"),
+    t("austrim_5"),
+    t("austrim_6"),
+    t("austrim_7"),
+    t("austrim_8"),
   ],
 };
 

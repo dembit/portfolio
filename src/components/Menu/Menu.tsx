@@ -51,7 +51,7 @@ const Menu = (props: Props) => {
               }}
               to={path}
             >
-              {text}
+              {text()}
             </NavLink>
           ))}
         </div>

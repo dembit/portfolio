@@ -20,7 +20,7 @@ const LineAngel = (props: Props) => {
           transition: { delay: 1, duration: 0.5 },
         }}
       >
-        Моя страница GIT HUB
+        Best Code
       </motion.a>
     </div>
   );

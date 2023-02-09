@@ -27,7 +27,7 @@ const MenuLanguage = (props: Props) => {
       <summary>{i18n.resolvedLanguage}</summary>
       {Languages.map((item, i) => {
         if (item === i18n.resolvedLanguage) {
-          return <></>;
+          return <div key={i}></div>;
         }
         return (
           <div

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../../components/Button/Button";
 import KnowledgeItem from "../../components/KnowledgeItem/KnowledgeItem";
 import { listButtonKnowledge, listKnowledge } from "../../variable";
@@ -6,9 +7,10 @@ import styled from "./Knowledge.module.css";
 type Props = {};
 
 const Knowledge = (props: Props) => {
+  const { t } = useTranslation();
   return (
     <div className={[styled.knowledge, "container"].join(" ")}>
-      <h1>Мои знания</h1>
+      <h1>{t("menu_knowledge")}</h1>
       <div className={styled.knowledge_button}>
         {listButtonKnowledge.map(({ text, id }) => (
           <Button key={id} text={text} />
@@ -25,7 +27,7 @@ const Knowledge = (props: Props) => {
         ))}
       </div>
       <div className={styled.knowledge_desc}>
-        При написании кода применяю принципы
+        {t("knowledge_principe")}
         <span> SOLID, DRY, KISS, YAGNI.</span>
       </div>
     </div>

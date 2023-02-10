@@ -12,11 +12,13 @@
 }
 
 .base a {
+  display: inline-block;
+  position: relative;
   color: var(--base02);
 }
 
 .base_canvas {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   width: 100%;
   height: 100%;

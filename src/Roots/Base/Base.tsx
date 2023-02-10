@@ -4,6 +4,8 @@ import AnimateCanvas from "../../components/CrazyPoints/AnimateCanvas";
 import { motion } from "framer-motion";
 
 import styled from "./Base.module.css";
+import { NavLink } from "react-router-dom";
+import { PathEnum } from "../../variable";
 
 type Props = {};
 
@@ -42,9 +44,10 @@ const Base = (props: Props) => {
         <br />
         <div>
           <Trans i18nKey="greetings_5">
-            Код можно увидеть <h2>здесь!</h2>
+            Код можно увидеть <NavLink to={PathEnum.CANVAS}>здесь!</NavLink>
           </Trans>
         </div>
+        <br />
         <div>
           <Trans i18nKey="greetings_6">
             Если вы дочитали до этого места то прошу <h2> более детально </h2>

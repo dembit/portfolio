@@ -19,14 +19,39 @@ const About = (props: Props) => {
           <div>{t("about_2")}</div>
           <div>{t("about_3")}</div>
           <div>
-            <a href="https://telegram.me/dembit">Telegram</a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://telegram.me/dembit"
+            >
+              Telegram
+            </a>
           </div>
           <div>
-            <a href="https://wa.me/+79002302877">WhatsApp</a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://wa.me/+79002302877"
+            >
+              WhatsApp
+            </a>
           </div>
           <div>
-            <a href="mailto:dembit1991@gmail.com">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="mailto:dembit1991@gmail.com"
+            >
               Gmail: dembit1991@gmail.com
+            </a>
+          </div>
+          <div>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.facebook.com/dima.kalinichenko.106?mibextid=ZbWKwL"
+            >
+              Facebook
             </a>
           </div>
         </div>

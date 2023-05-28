@@ -1,0 +1,16 @@
+.journalProject > h1 {
+  text-align: center;
+  color: var(--base02);
+  font-size: 42px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.journalProject img {
+  box-shadow: var(--boxShadow01);
+  width: 100%;
+}
+
+.journalProject a {
+  color: var(--base02);
+}

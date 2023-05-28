@@ -1,21 +1,22 @@
-import React, { Suspense } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Root from "./Roots/Root";
-import { AnimatePresence } from "framer-motion";
-import { PathEnum } from "./variable";
-import Skill from "./Roots/Skill/Skill";
-import Knowledge from "./Roots/Knowledge/Knowledge";
-import Portfolio from "./Roots/Portfolio/Portfolio";
-import About from "./Roots/About/About";
-import Base from "./Roots/Base/Base";
-import CanvasProject from "./Roots/Projects/Canvas/CanvasProject";
-import Loading from "./components/Loading/Loading";
-import PortfolioProject from "./Roots/Projects/PortfolioProject/PortfolioProject";
-import AnimateCanvas from "./components/CrazyPoints/AnimateCanvas";
-import ChessProject from "./Roots/Projects/ChessProject/ChessProject";
+import React, { Suspense } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import Root from './Roots/Root'
+import { AnimatePresence } from 'framer-motion'
+import { PathEnum } from './variable'
+import Skill from './Roots/Skill/Skill'
+import Knowledge from './Roots/Knowledge/Knowledge'
+import Portfolio from './Roots/Portfolio/Portfolio'
+import About from './Roots/About/About'
+import Base from './Roots/Base/Base'
+import CanvasProject from './Roots/Projects/Canvas/CanvasProject'
+import Loading from './components/Loading/Loading'
+import PortfolioProject from './Roots/Projects/PortfolioProject/PortfolioProject'
+import AnimateCanvas from './components/CrazyPoints/AnimateCanvas'
+import ChessProject from './Roots/Projects/ChessProject/ChessProject'
+import JournalProject from './Roots/Projects/JournalProject/JournalProject'
 
 function App() {
-  const location = useLocation();
+  const location = useLocation()
 
   return (
     <Suspense fallback={<Loading />}>
@@ -32,13 +33,17 @@ function App() {
               path={PathEnum.PORTFOLIO_PROJECT}
               element={<PortfolioProject />}
             />
+            <Route
+              path={PathEnum.JOURNAL_PROJECT}
+              element={<JournalProject />}
+            />
             <Route path={PathEnum.CHESS_PROJECT} element={<ChessProject />} />
             <Route path={PathEnum.CRAZY_POINTS} element={<AnimateCanvas />} />
           </Route>
         </Routes>
       </AnimatePresence>
     </Suspense>
-  );
+  )
 }
 
-export default App;
+export default App

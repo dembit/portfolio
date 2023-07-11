@@ -18,7 +18,7 @@ export const PAGES = [
   { id: 1, text: () => t('menu_knowledge'), path: PathEnum.KNOWLEDGE },
   { id: 2, text: () => t('menu_experience'), path: PathEnum.SKILL },
   { id: 3, text: () => t('menu_portfolio'), path: PathEnum.PORTFOLIO },
-  { id: 4, text: () => t('menu_about'), path: PathEnum.ABOUT },
+  // { id: 4, text: () => t('menu_about'), path: PathEnum.ABOUT },
 ]
 
 export const listKnowledge = [
